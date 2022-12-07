@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{client-layout}">
+<th:block layout:fragment="content">
+    <th:block layout:insert="~{fragments/client/header}"/>
+    <th:block layout:insert="~{pages/client/header-breadcrumbs}"/>
+    <th:block>
+        <div class="container">
+            <div class="std">
+<!--                <div class="row cms-icon-menu">-->
+<!--                    <div class="col-sms-3 col-sm-3 col-md-3">-->
+<!--                        <div>-->
+<!--                            <a href="/flashsale?fhs_campaign=homepageicon"><img-->
+<!--                                    src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/Icon_FlashSale_Hot_8px_1.png"-->
+<!--                                    class="center"></a>-->
+<!--                        </div>-->
+<!--                        <div class="cms-icon-menu-item-name">Flash Sale</div>-->
+<!--                    </div>-->
+<!--                    <div class="col-sms-3 col-sm-3 col-md-3">-->
+<!--                        <div>-->
+<!--                            <a href="/ma-giam-gia?fhs_campaign=homepageicon"><img-->
+<!--                                    src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/Icon_MaGiamGia_8px_1.png"-->
+<!--                                    class="center"></a>-->
+<!--                        </div>-->
+<!--                        <div class="cms-icon-menu-item-name">Mã Giảm Giá</div>-->
+<!--                    </div>-->
+<!--                    <div class="col-sms-3 col-sm-3 col-md-3">-->
+<!--                        <div>-->
+<!--                            <a href="/deal-hot-pages?fhs_campaign=homepageicon"><img-->
+<!--                                    src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/Icon_Trending_Hot_8px_1.png"-->
+<!--                                    class="center"></a>-->
+<!--                        </div>-->
+<!--                        <div class="cms-icon-menu-item-name">Xu hướng</div>-->
+<!--                    </div>-->
+<!--                    <div class="col-sms-3 col-sm-3 col-md-3">-->
+<!--                        <div>-->
+<!--                            <a href="/phien-cho-do-cu?fhs_campaign=homepageicon"><img-->
+<!--                                    src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/Icon_PhienChoCu_8px_1.png"-->
+<!--                                    class="center"></a>-->
+<!--                        </div>-->
+<!--                        <div class="cms-icon-menu-item-name">Phiên Chợ <br>Sách Cũ</div>-->
+<!--                    </div>-->
+<!--                    <div class="col-sms-3 col-sm-3 col-md-3">-->
+<!--                        <div>-->
+<!--                            <a href="/new-product?category=all&amp;sort=created_at&amp;fhs_campaign=homepageicon"><img-->
+<!--                                    src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/Icon_SanPhamMoi_8px_1.png"-->
+<!--                                    class="center"></a>-->
+<!--                        </div>-->
+<!--                        <div class="cms-icon-menu-item-name">Sản Phẩm <br>Mới</div>-->
+<!--                    </div>-->
+<!--                    <div class="col-sms-3 col-sm-3 col-md-3">-->
+<!--                        <div>-->
+<!--                            <a href="/tu-sach-tham-khao?fhs_campaign=homepageicon"><img-->
+<!--                                    src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/Icon_VanHoc_8px_1.png"-->
+<!--                                    class="center"></a>-->
+<!--                        </div>-->
+<!--                        <div class="cms-icon-menu-item-name">Tủ Sách <br> Tham Khảo</div>-->
+<!--                    </div>-->
+<!--                    <div class="col-sms-3 col-sm-3 col-md-3">-->
+<!--                        <div>-->
+<!--                            <a href="/back-to-school-trang-chinh?fhs_campaign=homepageicon"><img-->
+<!--                                    src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/Icon_VanPhongPham_Hot_8px_1.png"-->
+<!--                                    class="center"></a>-->
+<!--                        </div>-->
+<!--                        <div class="cms-icon-menu-item-name">SGK &amp;<br> VPP</div>-->
+<!--                    </div>-->
+<!--                    <div class="col-sms-3 col-sm-3 col-md-3">-->
+<!--                        <div>-->
+<!--                            <a href="/sach-thieu-nhi-nuoi-duong-tuong-lai?fhs_campaign=homepageicon"><img-->
+<!--                                    src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/Icon_ThieuNhi_8px_1.png"-->
+<!--                                    class="center"></a>-->
+<!--                        </div>-->
+<!--                        <div class="cms-icon-menu-item-name">Thiếu Nhi</div>-->
+<!--                    </div>-->
+<!--                    <div class="col-sms-3 col-sm-3 col-md-3">-->
+<!--                        <div>-->
+<!--                            <a href="/nhap-hoi-manga-comic?fhs_campaign=homepageicon"><img-->
+<!--                                    src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/Icon_MangaCommic_8px_1.png"-->
+<!--                                    class="center"></a>-->
+<!--                        </div>-->
+<!--                        <div class="cms-icon-menu-item-name">Manga - Comic</div>-->
+<!--                    </div>-->
+<!--                    <div class="col-sms-3 col-sm-3 col-md-3">-->
+<!--                        <div>-->
+<!--                            <a href="/sach-kinh-te-mua-manh-giam-bao?fhs_campaign=homepageicon"><img-->
+<!--                                    src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/Icon_KinhTe_8px_1.png"-->
+<!--                                    class="center"></a>-->
+<!--                        </div>-->
+<!--                        <div class="cms-icon-menu-item-name">Kinh Tế</div>-->
+<!--                    </div>-->
+<!--                </div>-->
+                <!-- end menu icon -->
+
+                <!--start icon_menu-->
+                <div class="desktop_only" style="width: 100%;">
+                    <div class="fhs_block" style="margin-top: 24px;">
+                        <div class="fhs_block_head fhs_center_left"><span class="ico_menu_red"
+                                                                          style="margin-right: 8px;"></span><span
+                                class="fhs_block_head_title">Danh mục sản
+                            phẩm</span></div>
+                        <div class="fhs_block_line">
+                            <div></div>
+                        </div>
+                        <div class="fhs_block_head">
+                            <div class="menu_category_block_content_list"
+                                 style="display: grid;grid-template-columns: repeat(6, 1fr);">
+                                <a href="/category?id=4"
+                                   class="fhs_column_center">
+                                    <img class=" lazyloaded"
+                                         src="https://cdn0.fahasa.com/media/wysiwyg/Duy-VHDT/Sach-tham-khao.jpg"
+                                         data-src="https://cdn0.fahasa.com/media/wysiwyg/Duy-VHDT/Sach-tham-khao.jpg">
+                                    <div class="fhs_nowrap_two fhs_center_center"
+                                         style="margin-top: 16px; font-size: 1.23em;">Sách tham khảo
+                                    </div>
+                                </a>
+                                <a href="/category?id=8"
+                                   class="fhs_column_center">
+                                    <img class=" lazyloaded"
+                                         src="https://cdn0.fahasa.com/media/wysiwyg/Duy-VHDT/Sach-hoc-ngoai-ngu.jpg"
+                                         data-src="https://cdn0.fahasa.com/media/wysiwyg/Duy-VHDT/Sach-hoc-ngoai-ngu.jpg">
+                                    <div class="fhs_nowrap_two fhs_center_center"
+                                         style="margin-top: 16px; font-size: 1.23em;">Sách học <br>ngoại ngữ
+                                    </div>
+                                </a>
+                                <a href="/category?id=5"
+                                   class="fhs_column_center">
+                                    <img class=" lazyloaded"
+                                         src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/category/van-hoc.png"
+                                         data-src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/category/van-hoc.png">
+                                    <div class="fhs_nowrap_two fhs_center_center"
+                                         style="margin-top: 16px; font-size: 1.23em;">Văn học
+                                    </div>
+                                </a>
+                                <a href="/category?id=6"
+                                   class="fhs_column_center">
+                                    <img class=" lazyloaded"
+                                         src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/category/tam-ly-ky-nang.png"
+                                         data-src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/category/tam-ly-ky-nang.png">
+                                    <div class="fhs_nowrap_two fhs_center_center"
+                                         style="margin-top: 16px; font-size: 1.23em;">Tâm lý<br>kỹ năng
+                                    </div>
+                                </a>
+                                <a href="/category?id=9"
+                                   class="fhs_column_center">
+                                    <img class=" lazyloaded"
+                                         src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/category/kinh-te.png"
+                                         data-src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/category/kinh-te.png">
+                                    <div class="fhs_nowrap_two fhs_center_center"
+                                         style="margin-top: 16px; font-size: 1.23em;">Kinh tế
+                                    </div>
+                                </a>
+                                <a href="/category?id=2" class="fhs_column_center">
+                                    <img class=" lazyloaded"
+                                         src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/category/foreign-books.png"
+                                         data-src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/category/foreign-books.png">
+                                    <div class="fhs_nowrap_two fhs_center_center"
+                                         style="margin-top: 16px; font-size: 1.23em;">Foreign<br>Books
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end icon_menu-->
+
+                <div id="categorytab-gia-noi-bat" class="categorytab-slider fhs-grid">
+                    <div>
+                        <div class="tabslider-header">
+                            <div class="tabslider-title girdslider-title-aaa"
+                                 style="background-color: #FCDDEF;padding-bottom: 12px;">
+                                <div class="header-icon-gridslider">
+                                    <img src="https://cdn0.fahasa.com/skin/frontend/base/default/images/ico_dealhot.png"
+                                         class="center">
+                                </div>
+                                <span>
+                                Xu Hướng Mua Sắm </span>
+                            </div>
+                            <div class="tab-title ma-title">
+                                <div class="tabslider-tabs tabslider-tabs-gird">
+                                    <ul class="tabs tabs-gia-noi-bat  tab_categorys girdslider-header-menu-aaa">
+                                        <div class="ts-header">
+                                            <li class="girdslider-menu-item-aaa" rel="deal" onclick="tabslider('gia-noi-bat',false)">
+                                                Xu Hướng Theo Ngày
+                                            </li>
+                                            <li class=" girdslider-menu-item-aaa" rel="km" onclick="tabslider('gia-noi-bat',false)">
+                                                Sách HOT - Giảm Sốc
+                                            </li>
+                                            <li class=" girdslider-menu-item-aaa" rel="kmnv" onclick="tabslider('gia-noi-bat',false)">
+                                                Bestseller Ngoại Văn
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabslider-top-content" style="margin-bottom: 10px;">
+                        </div>
+                        <div class="tabslider-loading-icon"
+                             style="margin: 0px 0px -350px; padding-top: 100px; display: none;"><img
+                                src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ring_loader.svg"
+                                class="img-responsive center-block"></div>
+                        <div class="tab_container" >
+                            <div class="col-lg-12 col-md-12 col-sm-12 fhs-full-p">
+                                <div id="tabdeal-gia-noi-bat" class="tab_content_gia-noi-bat"
+                                     style="min-height: 400px;">
+                                    </div>
+                                </div><!-- #tab1 -->
+                            </div>
+                        </div> <!-- .tab_container -->
+                    </div>
+                </div> <!-- end div -->
+
+                <div id="categorytab-mglnv" class="categorytab-slider fhs-grid">
+                    <div>
+                        <div class="tabslider-header">
+                            <div class="tab-title ma-title">
+
+                                <div class="tabslider-tabs tabslider-tabs-gird">
+                                    <ul class="tabs tabs-mglnv  tab_categorys girdslider-header-menu-aaa">
+                                        <div class="ts-header">
+                                            <li class="girdslider-menu-item-aaa" rel="mglnv" onclick="tabslider('mglnv',false)">
+                                                Manga Mới
+                                            </li>
+                                            <li class=" girdslider-menu-item-aaa" rel="topmanga" onclick="tabslider('mglnv',false)">
+                                                Top Manga
+                                            </li>
+                                            <li class=" girdslider-menu-item-aaa" rel="lnvelmoi" onclick="tabslider('mglnv',false)">
+                                                Light Novel Mới
+                                            </li>
+                                            <li class=" girdslider-menu-item-aaa" rel="lnvelnewbanchay" onclick="tabslider('mglnv',false)">
+                                                Top Light Novel
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabslider-top-content" style="margin-bottom: 10px;">
+                        </div>
+
+                        <div class="tabslider-loading-icon"
+                             style="margin: 0px 0px -350px; padding-top: 100px; display: none;"><img
+                                src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ring_loader.svg"
+                                class="img-responsive center-block"></div>
+                        <div class="tab_container">
+                            <div class="col-lg-12 col-md-12 col-sm-12 fhs-full-p">
+                                <div id="tabmglnv-mglnv"
+                                     class="tab_content_mglnv swiper-container swiper-container-horizontal" style="">
+                                </div>
+                            </div>
+                        </div> <!-- .tab_container -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </th:block>
+    <th:block layout:insert="~{fragments/client/footer}"/>
+</th:block>
+</html>
